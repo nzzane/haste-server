@@ -54,7 +54,7 @@ ENV RATELIMITS_NORMAL_TOTAL_REQUESTS=500\
     RATELIMITS_BLACKLIST=example1.blacklist,example2.blacklist 
 ENV DOCUMENTS=about=./about.md
 
-VOLUME /data
+VOLUME /app/data
 EXPOSE ${PORT}
 STOPSIGNAL SIGINT
 ENTRYPOINT [ "bash", "docker-entrypoint.sh" ]
